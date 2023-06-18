@@ -6,6 +6,7 @@ import ChannelDetail from './components/ChannelDetail';
 import Feed from './components/Feed';
 import SearchFeed from './components/SearchFeed';
 import SearchBar from './components/SearchBar';
+import SideBar from './components/SideBar';
 
 const App = () => (
     <BrowserRouter>
