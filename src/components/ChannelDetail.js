@@ -5,6 +5,7 @@ import { fetchFromAPI } from '../utils/fetchFromAPI';
 import { Box } from '@mui/material';
 import Videos from './Videos';
 import ChannelCard from './ChannelCard';
+import SideBar from './SideBar'
 
 
 const ChannelDetail = () => {
@@ -30,10 +31,13 @@ const ChannelDetail = () => {
     <Box minHeight= "95vh">
      <Box>
       <div style={{backgroundColor: 'white', zIndex: 10, height: "300px"}}/>
-      <ChannelCard channelDetail={channelDetail}>
-
+      <ChannelCard channelDetail={channelDetail} marginTop="-120px">
       </ChannelCard>
-     </Box>
+      </Box>
+      <Box display="flex" p="2" >
+         <Box sx={{ mr: { sm: "125px"}}}/>
+         <Videos videos={videos} />
+      </Box>
     </Box>
   )
 }
