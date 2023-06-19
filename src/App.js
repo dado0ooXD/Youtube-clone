@@ -9,6 +9,7 @@ import SearchBar from './components/SearchBar';
 import SideBar from './components/SideBar';
 import Videos from './components/Videos';
 import { fetchFromAPI } from './utils/fetchFromAPI';
+import VideoDetail from './components/VideoDetail';
 
 const App = () => (
     <BrowserRouter>
@@ -16,6 +17,7 @@ const App = () => (
       <Navbar />
       <Routes>
         <Route path='/' element={<Feed />} />
+        <Route path='/video/:id' element={<VideoDetail/>}/>
         <Route path='/channel/:id' element={<ChannelDetail />} />
         <Route path='/search/:searchTerm' element={<SearchFeed />} />
       </Routes>
