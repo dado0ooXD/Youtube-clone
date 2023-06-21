@@ -1,14 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Libre+Franklin:ital,wght@1,300&family=Open+Sans:wght@500&display=swap');
+
+*{
+  font-family: 'Cairo', sans-serif;
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: black;
+  /* color: black; */
+}
+
+.title{
+  font-family:  'Cairo', sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  /* color: black; */
 }
 
 ::-webkit-scrollbar {
@@ -43,7 +53,14 @@ a {
 .search-bar{
   border:none;
   outline:none;
+  color: white;
   width:350px;
+  background-color: #0f0f0f;
+  font-size: 16px;
+}
+
+.search-bar::placeholder {
+  font-size: 20px;
 }
 
 .category-btn{
@@ -56,6 +73,7 @@ a {
   background: transparent;
   outline: none;
   border: none;
+  text-align: center;
 
   padding: 7px 15px;
   margin: 10px 0px;
